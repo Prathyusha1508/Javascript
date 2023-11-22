@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //smallest of 2 numbers
+        function small(){
+            var x = 10;
+            var y = 15;
+            if(x<y){
+                console.log("10 is less than 15")
+            }
+            else{
+                console.log("15 is less than 10")
+
+            }
+        }
+            small()
+        //dynamically 
+        function small(x,y){
+            if(x<y){
+                console.log("x is smaller")
+            }
+            else{
+                console.log("y is smaller")
+                
+            }
+        }
+        small(50,6)
+        //greatest of 3 numbers
+        function great(a,b,c){
+            if(a>b&&a>c){
+                console.log("a is greatest")
+            }
+            else if(b>a&&b>c){
+                console.log("b is greatest")
+
+            }
+            else{
+                console.log("c is greatest")
+            }
+
+        }
+         great(10,20,30)
+        //even or odd
+        function evo(a){
+            if(a%2==0){
+                console.log("even")
+            }
+            else{
+                console.log("odd")
+            }
+
+        }
+        evo()
+        //range from 1 to 12 using switch statement
+        function range(){
+            var a =+ prompt("enter a value")
+            switch(a){
+                case 1:
+                    console.log("January");
+                    break;
+                    case 2 :
+                console.log("February");
+                break;
+            case 3 :
+                console.log("March");
+                break;
+            case 4:
+                console.log("April");
+                break;
+            case 5:
+                console.log("May");
+                break;
+            case 6:
+                console.log("June");
+                break;
+            case 7:
+                console.log("July");
+                break;
+            case 8:
+                console.log("August");
+                break;
+            case 9:
+                console.log("september");
+                break;
+            case 10:
+                console.log("October");
+                break;
+            case 11:
+                console.log("November");
+                break;
+            case 12:
+                console.log("December");
+                break;
+            default:
+                console.log("No month exists");
+         }
+            }
+            range()
+            // even or odd using switch case
+            function eo(){
+                var a =+ prompt("enter a num")
+                switch(a%2){
+                    case 0:
+                        console.log("even number")
+                        break;
+                    case 1:
+                        console.log("odd number")
+                        break;
+                    default:
+                        console.log("neither odd nor even")
+                   
+                }
+            }
+            eo()
+        //writing switch statement using if-else-if
+        function mon(month){
+        
+        if(month==1){
+            console.log("Jan");
+        }
+        else if(month==2){
+            console.log("Feb");
+        }
+        else if(month==3){
+            console.log("Mar");
+        }
+        else if(month==4){
+            console.log("Apr");
+        }
+        else if(month==5){
+            console.log("May");
+        }
+        else if(month==6){
+            console.log("Jun");
+        }
+        else if(month==7){
+            console.log("July");
+        }
+        else if(month==8){
+            console.log("Aug");
+        }
+        else if(month==9){
+            console.log("Sep");
+        }
+        else if(month==10){
+            console.log("Oct");
+        }
+        else if(month==11){
+            console.log("Nov");
+        }
+        else if(month==12){
+            console.log("Dec");
+        }
+        else{
+            console.log("You are out of boundary");
+        }
+    }
+    mon(5)
+        
+        
+    </script>
+    
+    
+</body>
+</html>
