@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   Create a function that takes two numbers as arguments and returns their sum
+    function num(a,b){
+        return a + b;
+    }
+    console.log(num(5,3));
+    // Write a function that takes an integer minutes and converts it to seconds.
+    function min(m){
+        return m * 60;
+    }
+    console.log(min(2));
+    //Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+   var count = 0;
+   function inc(b){
+    count = b + 1;
+    return(count);
+   }
+   console.log(inc(5));
+   //Create a function that takes voltage and current and returns the calculated power.
+   function pow(v,I){
+    return v * I;
+   }
+   console.log(pow(4,3));
+   //Write a function that returns the string "something" joined with a space " " and the given argument a.
+   function str(s){
+    return s + " ";
+   }
+   console.log(str("something"))
+//    //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+   function two(b,c){
+    if(b==10||c==10||b+c == 10){
+        console.log("true")
+
+    }
+    else{
+        console.log("false")
+    }
+   }
+   two(10,7);
+//Create a function that takes the age in years and returns the age in days.
+function age(g){
+    return g * 365;
+}
+console.log(age(2));
+// push
+  var a = [1,2,3,4];
+  var b = [];
+  var c = 10;
+  var sub;
+  for(i=0;i<a.length;i++){
+    sub = c - a[i];
+    b.push(sub);
+
+  }
+  console.log(b);
+
+  //8.	Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+  function string(a,b){
+   if(a.length!=b.length){
+      console.log("false");
+   }
+   for(i=1;i<=a.length;i++){
+  
+
+   }
+   console.log("true");
+  }
+  string("hello","world")
+
+  //9.	Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+  var greeting = ()=>{
+    console.log("hello");
+  }
+  greeting();
+
+  //Create Function that will take one parameter and return type of the data.
+  function data(n){
+    console.log(typeof(n))
+  }
+  data(70);
+
+  //. Program to find greatest of three numbers(using ternery operator).
+var a = 4;
+var b = 5;
+var c = 6;
+var great = (a>b) ? ((a>c) ? a : c) : ((b>c)? b:c);
+console.log(great);
+
+//22 . C Program to find factorial of number.
+var fact = 1;
+function f(h){
+    for(i=1;i<=h;i++){
+        fact = fact *i;
+    }
+    console.log(fact)
+}
+f(5);
+
+//Create a function that takes a string and returns the number (count) of vowels contained within it.
+function vow(u){
+    var v=0;
+    for(i=0;i<u.length;i++){
+        if(u[i]=="a"||u[i]=="e"||u[i]=="i"||u[i]=="o"||u[i]=="u"){
+            v = v + 1;
+        }
+
+    }
+    console.log(v);
+
+}
+vow("celebration");
+//Create Function that will take one parameter and return type of the data.
+			
+function para(p){
+    console.log(typeof(p));
+}
+para(500);
+
+ // Program to count vowels and consonants in a given String.
+ function string(b){
+        var vow = 0;
+        var con = 0;
+        for(i=0;i<b.length;i++){
+            if(b[i]=="a"||b[i]=="e"||b[i]=="i"||b[i]=="o"||b[i]=="u"){
+                vow = vow+1;
+            }
+            else{
+                con = con+1;
+            }
+        }
+        console.log(vow);
+        console.log(con);
+        console.log("2 vowels and 3 consonants")
+     }
+     string("hello");
+
+     //Reverse a number using while Loop
+    function rev(k,n1){
+        
+        var n2 = "";
+        while(n1>=1){
+            n2 = n2 + n1;
+            n1--;
+        }
+        console.log(n2);
+    }
+    rev(123,3);
+
+    //Count occurrence of number
+    var z = [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
+    function occ(key){
+        var a = 0;
+        for(i=0;i<z.length;i++){
+            if(z[i]==key){
+                a = a + 1;
+            }
+        }
+        console.log(a);
+        console.log("7 is present 2 times")
+
+    }
+    occ(7);
+
+
+    
+    
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
