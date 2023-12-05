@@ -162,6 +162,54 @@
         }
     }
     mon(5)
+
+    //Types of functions
+    //named function
+    function even(a){
+        if(a%2==0){
+            console.log("even");
+        }
+        else{
+            console.log("odd")
+        }
+    }
+    even(5);
+
+    //arrow function
+     var ev=(a)=>{
+        if(a%2==0){
+            console.log("even")
+        }
+        else{
+            console.log("odd")
+        }
+
+     }
+     ev(3);
+
+     //anonymous function
+     var evodd = function(c){
+        if(c%2==0){
+            console.log("even")
+        }
+        else{
+            console.log("odd")
+        }
+
+     }
+     evodd(7);
+
+     //immediately invoked function
+     var evo = (function(b){
+        if(b%2==0){
+            console.log("even")
+        }
+        else{
+            console.log("odd")
+        }
+
+     })(2)
+
         
         
     </script>

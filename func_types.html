@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //functions and its types in javascript
+        //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+        function fun(a,b){      //named fun
+            if(a==10||b==10||a+b==10){
+                console.log("true");
+            }
+            else{
+                console.log("false");
+            }
+        }
+        fun(5,5);
+        fun(2,3);
+        //types of functions(named,arrow,anonymous,immediately invoked)
+        //named fun
+        function sum(c,d){
+            return c+d;
+
+        }
+        console.log(sum(5,6));
+
+        //arrow fun
+        var c = arrow=(a,b)=>{
+            if(a==10||b==10||a+b==10){
+                console.log("true")
+            }
+            else{
+                console.log("false");
+            }
+
+        }
+        arrow(2,3);
+
+        //immediately invoked
+        var add=(function(n){
+            if(n%2==0){
+                console.log("even");
+            }
+            else{
+                console.log("odd");
+            }
+        })
+        (5);
+
+        //anonymous function
+        var prod = function(m,n){
+            console.log(m*n);
+        }
+        (3,4);
+
+
+    </script>
+</body>
+</html>

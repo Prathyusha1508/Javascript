@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //print vowel count in a string
+      function vowel(b){
+        var vow = 0;
+        for(i=0;i<b.length;i++){
+            if(b[i]=="a"||b[i]=="e"||b[i]=="i"||b[i]=="o"||b[i]=="u"){
+                vow = vow + 1;
+            }
+        }
+        console.log(vow);
+      }
+      vowel("hello");
+      //print vowels in a string
+      function v(c){
+        var n = "";
+        for(i=0;i<c.length;i++){
+            if(c[i]=="a"||c[i]=="e"||c[i]=="i"||c[i]=="o"||c[i]=="u"){
+                n = n + c[i];
+            }
+        }
+        console.log(n);
+      }
+      v("hello");
+      //print even indexed values
+      function even(x){
+        var e = "";
+        for(i=0;i<x.length;i++){
+            if(i%2==0){
+                e = e + x[i];
+            }
+        }
+        console.log(e);
+      }
+      even("hello");
+      //print even indexed vowels in a string
+      function string(a){
+        var t = "";
+        for(i=0;i<a.length;i++){
+            if(i%2==0 && (a[i]=="a"||a[i]=="e"||a[i]=="i"||a[i]=="o"||a[i]=="u")){
+                t = t + a[i];
+            }
+        }
+        console.log(t);
+      }
+      string("prathyusha");
+      //print odd indexed values in a string
+      function str(u){
+        var m = "";
+        for(i=0;i<u.length;i++){
+            if(i%2==!0 && (u[i]=="a"||u[i]=="e"||u[i]=="i"||u[i]=="o"||u[i]=="u")){
+                m = m + u[i];
+            }
+        }
+        console.log(m);
+      }
+      str("Anusha");
+      //odd indexed vowels using ternary operator
+      function odd(k){
+        var d = "";
+        for(i=0;i<k.length;i++){
+        k%2!==0 && k[i]=="a"||k[i]=="e"||k[i]=="i"||k[i]=="o"||k[i]=="u"? d = d+k[i]: "false"
+      }
+        console.log(d);
+    }
+      odd("hey")
+    </script>
+</body>
+</html>
